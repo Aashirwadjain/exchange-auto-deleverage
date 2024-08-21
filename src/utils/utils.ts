@@ -1,0 +1,27 @@
+import { ethers } from "ethers";
+const { keccak256, toUtf8Bytes } = ethers.utils;
+
+export function encodeData(dataTypes : any, dataValues : any) {
+  const bytes = ethers.utils.defaultAbiCoder.encode(dataTypes, dataValues);
+  return ethers.utils.hexlify(bytes);
+}
+
+export function hashData(dataTypes : any, dataValues : any) {
+  const bytes = ethers.utils.defaultAbiCoder.encode(dataTypes, dataValues);
+  const hash = ethers.utils.keccak256(ethers.utils.arrayify(bytes));
+  return hash;
+}
+
+export function hashString(string : any) {
+  return hashData(["string"], [string]);
+}
+
+export function keccakString(string: any) {
+  return keccak256(toUtf8Bytes(string));
+}
+
+export function sleep(ms : any) {
+    return new Promise(resolve => {
+      setTimeout(resolve, ms)
+    })
+  }
