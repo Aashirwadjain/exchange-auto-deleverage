@@ -75,23 +75,6 @@ export async function getIndexTokenForMarket(market: string) {
 
 
 
-// const processPositions = async () => {
-  
-//   try {
-//     const positions = await allPositionList(0, 1000);
-//     const infoList = [];
-//     for (const position of positions) {
-//       console.log("postions : ", position)
-
-//       
-//       console.log("Testing: ", positionInfo[0].result)
-//       infoList.push(positionInfo);
-//     }
-//   }
-//   catch(err){
-//     console.log("error", err)
-//   }
-// };
 
 
 // export async function getTokensForPrices(positionList : any){
