@@ -23,6 +23,7 @@ export const CONTRACTS: { [chain: string]: { [contractName: string]: string } } 
     ReferralStorage: "0xd4000663a52a1108Eb847d48F02da2e60fD10DD4", 
     MulticallAddress: "0x8f457da1b853b9436B4311D914c3D08100599F57", 
     SingleMarketLiquidator: "0x9ae8817C22246380A871bed5c8E51A4Bc6BE6b74", 
+    SingleMarketAdlHandler: "0x7a6731B679512A8284f7D45AEb9c13b4DabD7946",
     SingleMarketGlobalReader: "0x3CEe271604Cf177FeF64dba907Da7219fD71253C",
     DynamicMarketGlobalReader: "0xB77CcF8871b1f2D27ffAf095c9E99239faA9BF50",
   },
