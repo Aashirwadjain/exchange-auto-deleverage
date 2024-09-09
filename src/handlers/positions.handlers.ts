@@ -72,29 +72,3 @@ export async function getIndexTokenForMarket(market: string) {
     }
 
 }
-
-
-
-
-
-// export async function getTokensForPrices(positionList : any){
-//     const tokenList = [] ;
-//     for(const positionKey of positionList) { 
-  
-//       const tokens = await publicClient.multicall({
-//       contracts: [
-//         {
-//           address: '0xf040c9a3045b555808c104C60E94ED3003a372c9',
-//           abi: MarketReader.abi,
-//           functionName: 'getTokensForPrices',
-//           args: ["0x669D920c9cD990Aa62B3acC561480282b385c645", positionKey ]
-//         },
-//       ],
-//       multicallAddress: '0x8f457da1b853b9436B4311D914c3D08100599F57'
-//     });
-    
-//     tokenList[positionKey] = tokens[0].result ;
-//     }
-//     console.log("tokenList", tokenList);
-//     return tokenList;
-// }
